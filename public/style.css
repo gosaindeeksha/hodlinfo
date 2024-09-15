@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color:#fff ;
+    color: #191D28;
+    font-size: 16px;
+    padding: 0.5dvw 2dvw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+
+.logo {
+   width: 20dvw
+   
+}
+.header-buttons button{
+    border-radius: 10px;
+    font-size: larger;
+    padding: 1.5dvh 1dvw;
+    color: #2E3241;
+    background-color: #F8F9FA;
+    border: none;
+    margin: 0 0.5dvw;
+}
+
+.connect-btn button{
+    border-radius: 10px;
+    font-size: large;
+    padding: 1.5dvh 1dvw;
+    color: #fff;
+    background-color: #3dc6c1;
+    border: none;
+    margin: 0 0.5dvw;
+}
+/* timer styling */
+.timer{
+    padding: 0.7dvw;
+    border: solid;
+    display: inline-block;
+    border-color: #3dc6c1;
+    border-width: 0.5dvh;
+    border-radius: 50%;
+}
+
+/* switch css */
+.switch {
+    
+    position: relative;
+    display: inline-block;
+    top: -1dvh;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F8F9FA;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #3dc6c1;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2E3241;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2E3241;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  /* pricing section */
+  .price-section{
+    padding-top: 2dvh;
+  }
+  .price-section h1,div{
+  text-align: center;
+  padding-top: 3dvh ;
+  }
+
+  .price-section h1{
+    color: #69686A;
+    font-weight: 400;
+    font-size: 2vw;
+    letter-spacing: 0.75px;
+   
+
+  }
+  .main-price{
+    font-weight: 400;
+    font-size: 5dvw;
+  }
+  .percentage{
+    font-weight: 400;
+    font-size: 3dvw;
+    color: #3dc6c1;
+    line-height: 60%;
+  }
+  .percentage span{
+    color: #69686A;
+    font-size: 1.2dvw;
+  }
+  .sub-text{
+    color: #69686A;
+  }
+  .price-details{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  /* table section */
+
+  .table-section{
+    padding: 1.5dvw;
+    
+    
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Ensure borders are separated */
+    border-spacing: 0; /* Remove default spacing */
+    background-color: none;
+    border-radius: 8px;
+   
+  }
+
+
+thead th {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #888;
+    font-size: 2dvw;
+}
+hr{
+    border: none;
+    color: #69686A;
+    height: 2px;
+    width: 100%;
+}
+
+
+tbody tr {
+    text-align: center;
+    background-color: #F8F9FA;
+    border: solid;
+    border-width: 2dvh 0;
+   border-color: white;
+   border-radius: 10px !important;
+   color: #0C0F48;
+   font-weight: 700;
+   font-size: 2dvw;
+
+    
+     /* Ensure rows are block-level to respect margin */
+}
+
+tbody td {
+    padding: 15px;
+    padding: 1dvw;
+    border-radius: 10px;
+}
+
+tbody tr:first-child td {
+    border-radius: 10px 10px 0 0; /* Top-left and top-right radius */
+}
+tbody tr:last-child td {
+    border-radius: 0 0 10px 10px; /* Bottom-left and bottom-right radius */
+}
+tbody tr:not(:last-child) td {
+    border-bottom: none; /* Remove the bottom border between rows */
+}
+#fixed {
+    display: flex; /* Enables Flexbox layout */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically (optional if you want vertical centering) */
+    position: fixed; /* Fixes it to the bottom of the screen */
+    bottom: 0; /* Positions it at the bottom */
+    left: 0; /* Aligns it to the left edge of the screen */
+    width: 100%; /* Makes it take up the full width of the screen */
+    background-color: #191D28; /* Sets the background color */
+    padding: 10px; /* Optional: Adds some padding around the content */
+}
+#fixed button{
+    padding: 0.7dvw;
+    background-color: #191D28;
+    color: #3dc6c1;
+    border: solid;
+    border-color: #3dc6c1;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div{
+    color: #69686A;
+}
+
+:root:has(#theme:checked){
+    body{
+        background-color: #191D28;
+        color: #fff;
+    }
+
+    .header-buttons button{
+       
+        color: #fff;
+        background-color: #2E3241;
+        
+    }
+    tbody tr {
+        
+        background-color: #2E3241;
+    
+       border-color: #191D28;
+       color: #fff;
+        
+         /* Ensure rows are block-level to respect margin */
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    body{
+        padding-top: 1dvw;
+    }
+    .logo{
+        width:30dvw;
+    }
+  }
+
+  @media screen and (max-width: 426px) {
+ 
+    body{
+        padding-top: 2dvw;
+    }
+    .logo{
+        width:50dvw;
+    }
+    .price-section h1{
+        font-size:3.5dvw;
+    }
+    .percentage span{
+       
+        font-size: 2dvw;
+      }
+  }

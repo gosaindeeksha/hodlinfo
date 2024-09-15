@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HODLINFO</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <script src="https://kit.fontawesome.com/6dae39af6c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="https://hodlinfo.com/static/media/HODLINFO.8f78fc06.png" alt="hodlinfo logo" class="logo">
+            <div class="header-buttons">
+                <button>INR</button>
+                <button>BTC</button>
+                <button>BUY BTC</button>
+            </div>
+            <div class="connect-btn">
+                <div class="timer">60</div>
+                <button><i class="fa-solid fa-paper-plane" style="color: #ffffff; padding-right:0.5dvw ;"></i>Connect Telegram</button>
+
+                <label class="switch">
+                    <input type="checkbox" id="theme" checked>
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+        </nav>
+    </header>
+    <section class="price-section">
+        <h1>Best Price To Trade</h1>
+        <div class="price-details">
+            <div class="percentage">0.1 %<br><span>5 Mins</span>
+            </div>
+            <div class="percentage">0.96 %<br>
+               <span> 1 Hour</span></div>
+            <h2 class="main-price">₹ 26,56,110</h2>
+            <div class="percentage">2.73 %<br>
+                <span>1 Day</span></div>
+            <div class="percentage">7.51 %<br>
+                <span>7 Days</span></div>
+        </div>
+        <div class="sub-text">Average BTC/INR net price including commission</div>
+    </section>
+
+    <section class="table-section"></section>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Last </th>
+                    <th>Buy </th>
+                    <th>Sell</th>
+                    <th>Volume</th>
+                    <th>Base Unit</th>
+                </tr>
+            </thead>
+            <tbody id="data">
+                
+            </tbody>
+        </table>
+    </section>
+    <hr noshade>
+    <footer>
+        <div class="footer-div1">
+            Copyright © 2024 &nbsp;  HodlInfo.com
+        </div>
+        <div>Support</div>
+    </footer>
+    <div id="fixed">
+        <button>Add hodlinfo to home screen</button>
+    </div>
+    <div class="dummydiv">
+        <br><br><br>
+    </div>
+</body>
+</html>
